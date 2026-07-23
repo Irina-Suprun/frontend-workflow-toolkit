@@ -1,0 +1,12 @@
+{
+  "name": "frontend-workflow-toolkit-marketplace",
+  "owner": {
+    "name": "Iryna"
+  },
+  "plugins": [
+    {
+      "name": "frontend-workflow-toolkit",
+      "source": "./frontend-workflow-toolkit"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+@use "sass:map";
+@use "@/styles/theme" as *;
+
+@mixin breakpoint($point) {
+  @if map.has-key($breakpoints, $point) {
+    $min-width: map.get($breakpoints, $point);
+
+    @media (min-width: $min-width) {
+      @content;
+    }
+  }
+}

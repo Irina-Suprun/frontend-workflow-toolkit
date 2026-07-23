@@ -1,0 +1,120 @@
+// COLORS
+// Neutral             //Greyscale - Numeration from design system
+$neutral-1: #ffffff; // 0
+$neutral-2: #f6f8fa; // 25
+$neutral-3: #eceff3; // 50
+$neutral-4: #dfe1e6; // 100
+$neutral-5: #d1d1d1; // 200
+$neutral-6: #b4b6b9; // 300
+$neutral-7: #8e9196; // 400
+$neutral-8: #686d73; // 500
+$neutral-9: #434950; // 600
+$neutral-10: #1d242d; // 700
+$neutral-11: #0f1217; // 800
+$neutral-12: #0a0c0f; // 900
+$neutral-13: #000000;
+
+// Brand-Green
+$brand-green-1: #f4f6f5; // 0
+$brand-green-2: #d2dbd5; // 25
+$brand-green-3: #b0c1b5; // 50
+$brand-green-4: #61816d; // 100
+$brand-green-5: #3f614a; // 200
+$brand-green-6: #1e4c2f; // 300
+
+// Status Colors : Danger;
+$danger-1: #fcd9df;  // 0
+$danger-2: #f7a0b0;  // 25
+$danger-3: #f48196;  // 50
+$danger-4: #f2627b;  // 100
+$danger-5: #ef4261;  // 200
+$danger-6: #501620;  // 300
+
+// Status Colors : Success;
+$success-1: #f0f9f4; // 0
+$success-2: #e1f2e8; // 25
+$success-3: #b5e1c9; // 50
+$success-4: #7fca9f; // 100
+$success-5: #489469; // 200
+$success-6: #2d5d42; // 300
+
+// Status Colors : Warning;
+$warning-1: #fff6e0; // 0
+$warning-2: #f9eccb; // 25
+$warning-3: #fbd982; // 50
+$warning-4: #ffbe4c; // 100
+$warning-5: #956321; // 200
+$warning-6: #5b3d1e; // 300
+
+// Typography
+$font-geist: var(--font-geist, "Geist", sans-serif);
+
+// Font size
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-md: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 20px;
+$font-size-xxl: 24px;
+$font-size-hg: 32px;
+$font-size-xhg: 40px;
+$font-size-xxhg: 52px;
+
+// Line height
+$line-height-xs: 1.2;
+$line-height-sm: 1.5;
+$line-height-md: 1.55;
+
+// Text color
+$text-color: $neutral-9;
+
+// Link Color
+
+// Shadow
+$box-shadow-focus: inset 0 1px 1px $neutral-3, 0 0 8px #{$brand-green-6}80;
+$box-shadow-focus-white: inset 0 -1px 1px $neutral-1, 0 0 8px $neutral-3;
+$box-shadow-cart: 0 1px 5px 0 #{$neutral-10}33;
+
+// Border
+$border-radius-sm: 8px;
+$border-radius-md: 12px;
+$border-radius-lg: 20px;
+$border-radius-pill: 9999px;
+$border-radius-circle: 50%;
+$border-light: 1px solid $neutral-4;
+$border-base: 1px solid $neutral-6;
+
+// Spacings
+$base-spacing: 6px;
+$secondary-spacing: 2px;
+
+// Transition
+$transition-color: color 0.2s ease;
+$transition-background: background-color 0.2s ease;
+$transition-border-color: border-color 0.2s ease;
+$transition-transform-ease: transform 0.25s ease;
+$transition-transform-ease-in-out: transform 0.25s ease-in-out;
+$transition-opacity-ease: opacity 0.3s ease;
+$transition-opacity-ease-in-out: opacity 0.3s ease-in-out;
+$transition-opacity-linear: opacity 0.2s linear;
+$transition-box-shadow: box-shadow 0.3s ease;
+
+// z-index
+$zid-base: 0;
+$zid-raised: 1;
+$zid-floating: 10;
+$zid-overlay: 100;
+$zid-modal: 1000;
+
+// Brealpoints:
+$breakpoints: (
+  xs: 0px,
+  sm: 420px,
+  600: 600px,
+  md: 768px,
+  lg: 980px,
+  xl: 1200px,
+  hg: 1440px,
+  xhg: 1600px,
+  xxhg: 1920px,
+);

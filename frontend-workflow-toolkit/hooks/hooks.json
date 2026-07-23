@@ -1,0 +1,36 @@
+{
+  "PreToolUse": [
+    {
+      "matcher": "Bash",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "python3 ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/gate-git.py",
+          "timeout": 10
+        }
+      ]
+    },
+    {
+      "matcher": "mcp__linear__save_issue",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "python3 ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/gate-linear.py",
+          "timeout": 10
+        }
+      ]
+    }
+  ],
+  "PostToolUse": [
+    {
+      "matcher": "Write|Edit",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "python3 ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/auto-lint-test.py",
+          "timeout": 120
+        }
+      ]
+    }
+  ]
+}
