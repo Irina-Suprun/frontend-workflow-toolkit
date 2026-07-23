@@ -6,7 +6,7 @@
   "plugins": [
     {
       "name": "frontend-workflow-toolkit",
-      "source": "./frontend-workflow-toolkit"
+      "source": "."
     }
   ]
 }
